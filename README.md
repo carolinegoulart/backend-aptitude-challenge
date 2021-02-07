@@ -22,9 +22,9 @@ Create a supply transport route search REST API
 **iTrain**
 | Field | Format
 |--|--|
-| trip_number | Alphanumeric (6 char lenght)
-| origin_station | Alphanumeric (3 char lenght)
-| destiny_station | Alphanumeric (3 char lenght)
+| trip_number | Alphanumeric (6 char length)
+| origin_station | Alphanumeric (3 char length)
+| destiny_station | Alphanumeric (3 char length)
 | date | DATE
 | departure_time | TIME
 | arrival_time | TIME
@@ -33,9 +33,9 @@ Create a supply transport route search REST API
 **UberOnRails**
 | Field | Format
 |--|--|
-| trip | Alphanumeric (8 char lenght)
-| origin | Alphanumeric (3 char lenght)
-| destiny | Alphanumeric (3 char lenght)
+| trip | Alphanumeric (8 char length)
+| origin | Alphanumeric (3 char length)
+| destiny | Alphanumeric (3 char length)
 | departureDate | DATE
 | departure | TIME
 | arrival | TIME
@@ -45,7 +45,7 @@ Create a supply transport route search REST API
 | Field | Format
 |--|--|
 | name | Alphanumeric
-| station | Alphanumeric (3 char lenght)
+| station | Alphanumeric (3 char length)
 | city | Alphanumeric
 
 **Objective A:**
@@ -78,11 +78,11 @@ Create a supply transport route search REST API
 				"price": 1400.00
 			},
 			{
-				"origem": "NYC",
-				"destino": "LOA",
-				"saida": "YYYY-MM-DDTHH:mm:ss.sssZ",
-				"chegada": "YYYY-MM-DDTHH:mm:ss.sssZ",
-				"operadora": "UberOnRails",
+				"origin": "NYC",
+				"destiny": "LOA",
+				"departure": "YYYY-MM-DDTHH:mm:ss.sssZ",
+				"arrival": "YYYY-MM-DDTHH:mm:ss.sssZ",
+				"company": "UberOnRails",
 				"price": 350.00
 			}
 		]
