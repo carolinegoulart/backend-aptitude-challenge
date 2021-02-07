@@ -15,7 +15,7 @@ Create a supply transport route search REST API
 - Code and solution's quality
 
 **The resources (on this repository) you should use:**
-- There is a [CSV from iTrain](iTrain.csv) and a [JSON from UberOnRails](UberOnRails.json), each one with a list of train trips scheduled by the company between 2021/02/10 and 2021/02/18.
+- There is a [CSV from iTrain](iTrain.csv) and a [JSON from UberOnRails](uberOnRails.json), each one with a list of train trips scheduled by the company between 2021/02/10 and 2021/02/18.
 - A [JSON of the train stations](trainStations.json) available.
 - They are structured as follows:
 
