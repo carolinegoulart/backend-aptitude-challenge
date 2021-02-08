@@ -2,7 +2,7 @@
 Welcome to the SWAT-Intel Aptitude Challenge. You can develop your work as follows:
 
 **Mission:**
-Create a supply transport route search REST API
+Create a supply transport route search REST API.
 
 **Estimated time**
 4 Hours
@@ -11,11 +11,11 @@ Create a supply transport route search REST API
 - The REST API should be written in Java/Kotlin with Spring or C# with .NET Core.
 - Database is not necessary.
 
-**What will be evalueted:**
-- Code and solution's quality
+**What will be evaluated:**
+- The code and the quality of your solution.
 
-**The resources (on this repository) you should use:**
-- There is a [CSV from iTrain](iTrain.csv) and a [JSON from UberOnRails](uberOnRails.json), each one with a list of train trips scheduled by the company between 2021/02/10 and 2021/02/18.
+**You must use the following resources to develop your solution:**
+- There is a [CSV from iTrain](iTrain.csv) and a [JSON from UberOnRails](uberOnRails.json) file, each one containing a list of train trips scheduled by the company between 2021/02/10 and 2021/02/18.
 - A [JSON of the train stations](trainStations.json) available.
 - They are structured as follows:
 
@@ -48,15 +48,15 @@ Create a supply transport route search REST API
 | station | Alphanumeric (3 char length)
 | city | Alphanumeric
 
-**Objective A:**
-- Provide 1 (one) endpoint that receives `Origin station`, `Destiny station` and optionally `Trip date` criterias and return a JSON with all the available routes (composed by one or more trips) of the two companies (iTrain and UberOnRails) matching the search criteria, ordened by date and arrival time.
-- Trip connections can be used as long as the interval between the trips are equal or less than 12 hours.
-- A trip from iTrain can connect with a trip from UberOnRails, there is no problem with that.
-- The max of trip connections is up to you.
+**Challenge A:**
+- Provide 1 (one) endpoint that receives two mandatory fields called `Origin station` and `Destiny station`, and a non-mandatory field called `Trip date`, and returns a JSON with all the available routes that match the search criteria. These routes may be composed of one or more trips, and the trips might be managed by different companies (iTrain and/or UberOnRails). For example, a trip from iTrain can connect with a trip from UberOnRails - there is no problem with that.
+- The response has to be ordered by both the date and the arrival time.
+- Trip connections can be used as long as the interval between the trips is equal to or less than 12 hours.
+- The maximum number of trip connections is up to you.
 
-**Objective B:**
-- Provide 1 (one) endpoint that returns the list of all the train stations that completely or partialy match a `Station name` criteria.
-- The criteria should not be required to use the endpoint.
+**Challenge B:**
+- Provide 1 (one) endpoint that returns a list of all the train stations that completely or partialy match a `Station name` criteria.
+- The criteria should not be required, which means the endpoint has to work properly even if the user don't provide any data.
 - The criteira matching should not be case sensitive.
 
 **Response example:**
@@ -91,7 +91,7 @@ Create a supply transport route search REST API
 ```
 
 **Extras:**
-Add all the dependencies or resources you think that is necessary to develop the best solution for the challenge. Some examples, but you don't need to limitate yourself on it:
+Add all the dependencies or resources you think that are necessary in order to develop the best solution for the challenge. You can use the examples below, but don't limitate yourself on it:
 
 - Documentation (Swagger, OpenAPI etc)
 - Cache
